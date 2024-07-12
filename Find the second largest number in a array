@@ -1,0 +1,9 @@
+numbers = list(map(int, input().split()))
+first, second = float('-inf'), float('-inf')
+for number in numbers:
+    if number > first:
+        second = first
+        first = number
+    elif number > second:
+        second = number
+print(second)
