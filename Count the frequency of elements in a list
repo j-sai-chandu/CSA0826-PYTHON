@@ -1,0 +1,4 @@
+from collections import Counter
+numbers = list(map(int, input().split()))
+frequency = Counter(numbers)
+print(dict(frequency))
