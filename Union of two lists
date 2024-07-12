@@ -1,0 +1,4 @@
+list1 = list(map(int, input().split()))
+list2 = list(map(int, input().split()))
+union = list(set(list1) | set(list2))
+print(union)
