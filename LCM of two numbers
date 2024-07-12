@@ -1,0 +1,7 @@
+a = int(input())
+b = int(input())
+gcd = a
+while b:
+    gcd, b = b, gcd % b
+lcm = a * b // gcd
+print(lcm)
