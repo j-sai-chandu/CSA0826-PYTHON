@@ -1,0 +1,3 @@
+n = int(input())
+sum_odd = n * n
+print(sum_odd)
