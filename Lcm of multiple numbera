@@ -1,0 +1,10 @@
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+numbers = list(map(int, input().split()))
+lcm = numbers[0]
+for num in numbers[1:]:
+    lcm = lcm * num // gcd(lcm, num)
+print(lcm)
