@@ -1,0 +1,6 @@
+principal = float(input())
+rate = float(input())
+time = int(input())
+amount = principal * (1 + rate / 100) ** time
+compound_interest = amount - principal
+print(compound_interest)
